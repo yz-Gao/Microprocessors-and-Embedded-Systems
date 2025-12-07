@@ -24,10 +24,10 @@ $ loongarch64-linux-gnu-gcc test_pwm.c -o test_pwm -static
 
 四、使用
 1.方波输出
-# ./test_pwm start      // 应该显示"2Hz PWM started on GPIO60"，并且用示波器/万用表能观察到方波
+# ./test_pwm start    // 应该显示"2Hz PWM started on GPIO60"，并且用示波器/万用表能观察到方波
 2.状态检测
-# ./test_pwm status    应该显示"GPIO60: PWM Running, Current state: HIGH/LOW"
+# ./test_pwm status   // 应该显示"GPIO60: PWM Running, Current state: HIGH/LOW"
 3.查看寄存器状态
-# ./test_pwm debug   会在内核日志中输出寄存器状态（用dmesg | tail -10查看）
+# ./test_pwm debug    // 会在内核日志中输出寄存器状态（用dmesg | tail -10查看）
 4.停止输出
-# ./test_pwm stop      应该显示"PWM stopped on GPIO60"，方波停止
+# ./test_pwm stop     // 应该显示"PWM stopped on GPIO60"，方波停止
